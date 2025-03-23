@@ -3,15 +3,15 @@
 }
 
 .container__menu-title > h1 {
-  margin: 15px 0;
+  margin: 5px 0;
   text-align: center;
-  font-size: 90px;
+  font-size: 70px;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 
 .container__menu-title > hr {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 5px;
 }
