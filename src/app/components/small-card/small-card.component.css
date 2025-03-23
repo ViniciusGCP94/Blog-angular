@@ -1,0 +1,11 @@
+
+.container__small-card{
+  display: flex;
+  align-items: center;
+}
+
+.container__small-card > h2 {
+  font-size: 20px ;
+  font-weight: 500;
+  margin-left: 30px;
+}

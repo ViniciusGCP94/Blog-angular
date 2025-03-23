@@ -1,0 +1,24 @@
+.container__big-card{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 100px; /*Ajustar quando o layoutu estiver pronto*/
+}
+
+.big-card__title > h2 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.big-card__description > p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  margin-top: 10px;
+}

@@ -1,0 +1,29 @@
+header{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 5px 0;
+}
+
+.container {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+p {
+  color: white;
+}
+
+.articles__main {
+  width: 50%;
+}
+
+.articles__others {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.articles__others > hr {
+  border-color: #080808;
+}
