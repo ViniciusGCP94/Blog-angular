@@ -1,13 +1,8 @@
-header{
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  padding: 5px 0;
-}
 
 .container {
   display: flex;
-  margin-bottom: 30px;
+  margin: 30px 70px;
+
 }
 
 p {
@@ -15,7 +10,7 @@ p {
 }
 
 .articles__main {
-  width: 50%;
+  width: 80%;
 }
 
 .articles__others {

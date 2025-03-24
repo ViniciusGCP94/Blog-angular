@@ -1,17 +1,21 @@
-<article class="container__big-card">
-  <div class="big-card__focus">
-    <img
-    src={{photoCover}}
-    alt=""
-    height="250px"
-    width="350px"
-    srcset=""
-    >
-  </div>
-  <div class="big-card__title">
-    <h2>{{titleCard}}</h2>
-  </div>
-  <div class="big-card__description">
-    <p>{{descriptionCard}}</p>
-  </div>
-</article>
+
+<div class="container__big-card">
+  <a [routerLink]="['content', Id]">
+    <div class="big-card__focus">
+      <img
+      src={{photoCover}}
+      alt=""
+      height="255px"
+      width="450px"
+      srcset=""
+      >
+    </div>
+    <div class="big-card__title">
+      <h2>{{titleCard}}</h2>
+    </div>
+    <div class="big-card__description">
+      <p>{{descriptionCard}}</p>
+    </div>
+  </a>
+</div>
+

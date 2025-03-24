@@ -1,7 +1,9 @@
 <div class="container__small-card">
-  <img src={{photoCard}}
-    height="120px"
-    width="180px"
-    srcset=""alt="">
-  <h2>{{titleCard}}</h2>
+  <a [routerLink]="['content', Id]">
+    <img src={{photoCard}}
+      height="120px"
+      width="180px"
+      srcset=""alt="">
+    <h2>{{titleCard}}</h2>
+  </a>
 </div>

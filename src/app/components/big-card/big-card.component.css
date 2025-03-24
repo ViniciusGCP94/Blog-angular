@@ -1,10 +1,16 @@
 .container__big-card{
-  width: 60%;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-left: 100px; /*Ajustar quando o layoutu estiver pronto*/
+}
+
+.container__big-card > a {
+  text-decoration: none;
+}
+
+.big-card__focus > img{
+  border: 2px solid #ffffff71;
+  border-radius: 15px;
 }
 
 .big-card__title > h2 {
