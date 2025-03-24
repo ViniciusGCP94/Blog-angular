@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
+import {dataFake} from '../../data/dataFake';
 
 @Component({
   selector: 'app-content',
@@ -10,13 +11,15 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
 export class ContentComponent implements OnInit{
 
   @Input()
-  contentCover: string = 'https://i.imgur.com/IbuJRgN.jpeg'
+  contentCover: string = ''
 
   @Input()
-  contentTitle: string ='Titulo do conteúdo'
+  contentTitle: string =''
 
   @Input()
-  contentText: string = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eos quas iure quaerat, quibusdam, autem neque quam debitis porro at atque vitae necessitatibus, id dolor. Et autem voluptatibus eaque quam?'
+  contentText: string = ''
+
+  private id : string | null = '0'
 
   constructor(
     private route:ActivatedRoute
@@ -25,6 +28,18 @@ export class ContentComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe( value => console.log(value.get("id")))
+    // função abaixo: Para saber quais parâmetros a noticia está retornando
+    // this.route.paramMap.subscribe( value => console.log(value.get("id")))
+
+    this.route.paramMap.subscribe( value => this.id = value.get('id'))
+    this.setValuesToComponent(this.id)
+  }
+
+  setValuesToComponent (id:string | null) {
+    const result = dataFake.filter (article => article.id.toString() == id)[0]
+
+    this.contentTitle = result.title
+    this.contentCover = result.cover
+    this.contentText = result.text
   }
 }
